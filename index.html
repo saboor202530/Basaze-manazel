@@ -119,3 +119,94 @@
     </footer>
 </body>
 </html>
+<form action="https://formspree.io/f/your_form_id" method="POST">
+    <label for="name">نام:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">ایمیل:</label>
+    <input type="email" id="email" name="_replyto" required>
+    <label for="message">پیام:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">ارسال</button>
+</form>
+<section id="gallery">
+    <h2>گالری تصاویر</h2>
+    <div class="gallery">
+        <img src="image1.jpg" alt="پروژه 1">
+        <img src="image2.jpg" alt="پروژه 2">
+        <img src="image3.jpg" alt="پروژه 3">
+    </div>
+</section>
+
+<style>
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+    .gallery img:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+</style>
+<section id="testimonials">
+    <h2>نظرات مشتریان</h2>
+    <div class="testimonial">
+        <p>"کار فوق‌العاده‌ای انجام دادید. خانه ما مثل روز اول شد!"</p>
+        <p>- علی رضایی</p>
+    </div>
+    <div class="testimonial">
+        <p>"از کیفیت کار و تیم حرفه‌ای شما بسیار راضی هستم."</p>
+        <p>- مریم احمدی</p>
+    </div>
+</section>
+
+<style>
+    #testimonials {
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+    }
+    .testimonial {
+        margin: 10px 0;
+        font-style: italic;
+    }
+</style>
+<section id="location">
+    <h2>موقعیت ما</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345086154!2d144.96305781568013!3d-37.814107979751984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2zTWVsYm91cm5lLCBBdXN0cmFsaWE!5e0!3m2!1sen!2s!4v1616106956021!5m2!1sen!2s" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</section>
+<div id="contact-button">
+    <a href="tel:09121234567">تماس با ما</a>
+</div>
+
+<style>
+    #contact-button {
+        text-align: center;
+        margin: 20px 0;
+    }
+    #contact-button a {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+    #contact-button a:hover {
+        background-color: #0056b3;
+    }
+</style>
